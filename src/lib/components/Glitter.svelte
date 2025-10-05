@@ -15,12 +15,12 @@
   }
 
   function initParticles() {
-    particles = Array.from({ length: 200 }, () => ({
-      x: Math.random() * width,
-      y: height * 0.3 + Math.random() * height * 0.7,
-      size: 0.3 + Math.random() * 0.7,
-      alpha: 0.2 + Math.random() * 0.5,
-      speed: 0.05 + Math.random() * 0.15
+    particles = Array.from({ length: 100 }, () => ({
+      x: Math.random() * window.innerWidth,
+      y: window.innerHeight * 0.7 + Math.random() * window.innerHeight * 0.3, // 하단만
+      size: 0.12 + Math.random() * 0.3,
+      alpha: 0.1 + Math.random() * 0.4,
+      speed: 0.02 + Math.random() * 0.05
     }));
   }
 
@@ -49,18 +49,21 @@
     if (!ctx) return;
 
     for (let p of particles) {
-      p.y -= p.speed * 0.1;
-      p.alpha += Math.sin(Date.now() / 500 + p.x) * 0.01;
+      // 미세한 파동
+      p.y += Math.sin(Date.now() / 800 + p.x * 0.002) * 0.1;
 
-      if (p.alpha < 0.1) p.alpha = 0.1;
-      if (p.alpha > 0.8) p.alpha = 0.8;
+      // 밝기 변화
+      p.alpha += Math.sin(Date.now() / 900 + p.x * 0.01) * 0.015;
+      p.alpha = Math.min(Math.max(p.alpha, 0.1), 0.6); // 💡 더 밝게 (최대 0.6)
+
+      // 살짝 더 큰 반사 범위
+      const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 18);
+      gradient.addColorStop(0, `rgba(255, 255, 220, ${p.alpha})`);
+      gradient.addColorStop(1, `rgba(255, 255, 220, 0)`);
 
       ctx.beginPath();
-      const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 3);
-      gradient.addColorStop(0, `rgba(255, 255, 255, ${p.alpha})`);
-      gradient.addColorStop(1, `rgba(255, 255, 255, 0)`);
       ctx.fillStyle = gradient;
-      ctx.arc(p.x, p.y, p.size * 2, 0, Math.PI * 2);
+      ctx.arc(p.x, p.y, p.size * 8, 0, Math.PI * 2);
       ctx.fill();
     }
   }
@@ -75,7 +78,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Sunlight보다 위, Header보다 아래 */
     pointer-events: none;
+    z-index: 1;
   }
 </style>

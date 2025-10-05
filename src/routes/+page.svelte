@@ -14,7 +14,8 @@
 		<nav>
 			<button class="link-button" on:click={() => goto('About')}>About</button>
 			<button class="link-button" on:click={() => goto('Experience')}>Experience</button>
-			<button class="link-button" on:click={() => goto('Links')}>Links</button>
+			<button class="link-button" on:click={() => goto('Archive')}>Archive</button>
+			<button class="link-button" on:click={() => goto('Connects')}>Connects</button>
 		</nav>
 	</main>
 </section>
@@ -52,7 +53,7 @@
 		position: relative;
 		padding-left: 20px;
 		font-size: 2.5rem;
-		padding: 1rem;
+		padding: 0.3rem;
 	}
 
 	.link-button:hover {
