@@ -13,7 +13,7 @@
     <h1>Archive</h1>
 	<ul class="column">
 		{#each data.posts as post}
-            <a href={post.slug} class="title">
+            <a href={'/Archive/'+ post.slug} class="title">
                 <li class="post">
                     <p class="date">{formatDate(post.date)}</p>
 				    <span class="title-text">{post.title}</span>
