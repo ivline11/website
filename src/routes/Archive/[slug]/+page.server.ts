@@ -3,7 +3,7 @@ import { error } from "@sveltejs/kit";
 import fs from "fs";
 import matter from "gray-matter";
 
-export const prerender = true;
+
 
 export async function load({ params }: { params: { slug: string } }) {
   try {
