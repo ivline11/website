@@ -170,7 +170,7 @@
       </div>
       <ul>
         <li>7th Infantry Division, 7-month Served as squad leader</li>
-        <li>Honorable discharged from the Army as a Sergent</li>
+        <li>Honorably discharged from the Army as a Sergent</li>
       </ul>
     </div>
   </div>

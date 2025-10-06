@@ -38,6 +38,13 @@
             </a>
         </li>
         <hr />
+        <li>
+            <a href="https://medium.com/@rkdxowjd0215" target="_blank" rel="noopener" class="link">
+                Medium
+                <span class="tooltip">@rkdxowjd0215</span>
+            </a>
+        </li>
+        <hr />
     </ul>
 </div>
 

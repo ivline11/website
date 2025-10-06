@@ -35,7 +35,7 @@
 	margin: 2rem auto;
 	color: #eaf9ff;
 	padding: 2rem 2.5rem;
-
+		
 	/* ✅ glass + spacing */
 	background: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(12px);
@@ -107,6 +107,7 @@ article:hover {
 	text-shadow: 0 0 20px rgba(150, 230, 255, 0.5);
 	margin-top: 2.5rem;
 	margin-bottom: 1rem;
+	font-family: "JetBrains Mono", monospace;
 }
 
 .content :global(a) {

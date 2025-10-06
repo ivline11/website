@@ -44,7 +44,7 @@
         <li>🔹 <strong>System & Backend: </strong> C/C++, Python</li>
         <li>🔹 <strong>Blockchain: </strong> Solidity, Sui Move, Noir</li>
         <li>🔹 <strong>Design Tools: Figma</strong></li>
-        <li>🔹 <strong>Language </strong> Korean, English</li>
+        <li>🔹 <strong>Language: </strong> Korean, English</li>
       </ul>
     </div>
   </div>
