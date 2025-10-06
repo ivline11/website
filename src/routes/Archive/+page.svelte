@@ -26,7 +26,7 @@
 
 <style>
     section {
-        max-width: 48rem;
+        max-width: 50rem;
         width: 100%;
         margin: 0 auto;
         color: var(--color-theme-dynamic);
@@ -53,11 +53,17 @@
     li.post {
         font-size: 1.75rem;
         padding: 0.5rem 1rem 1rem 1rem;
+        border-radius: 16px;
+        margin-bottom: 0.2rem;
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 4px 25px rgba(0, 80, 180, 0.2);
+        transition: all 0.3s ease;
     }
 
     li.post:hover {
-        background-color: #444444;
+        background-color: #267ed066;
         cursor: pointer;
+        border-radius : 10px;
     }
 
     a.title {
@@ -69,9 +75,13 @@
         color: var(--color-theme-dynamic);
         display: block;
     }
+    
 
     a.title:hover .title-text {
-        text-decoration: underline;
+        text-decoration: none;
+        color: #a8ecff;
+        text-shadow: 0 0 16px rgba(150, 230, 255, 0.8);
+        transition: 0.2s ease;
     }
 
     p.date {
@@ -92,5 +102,17 @@
         li.post {
             font-size: 1.5rem;
         }
+    }
+    h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgba(180, 250, 255, 0.6);
+    animation: shimmer 5s infinite linear;
+    }
+
+    @keyframes shimmer {
+        0% { text-shadow: 0 0 10px rgba(150, 230, 255, 0.4); }
+        50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); }
+        100% { text-shadow: 0 0 10px rgba(150, 230, 255, 0.4); }
     }
 </style>

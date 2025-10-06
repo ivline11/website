@@ -169,8 +169,8 @@
         <span class="exp-meta">Gangwon, Korea | 2022 – 2023</span>
       </div>
       <ul>
-        <li>Served as squad leader, managing team operations</li>
-        <li>Honorable discharge from the Army as a Sergent</li>
+        <li>7th Infantry Division, 7-month Served as squad leader</li>
+        <li>Honorable discharged from the Army as a Sergent</li>
       </ul>
     </div>
   </div>
