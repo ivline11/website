@@ -1,4 +1,8 @@
-# sv
+## Taejeong Kang's Website
+
+<img width="1710" height="886" alt="스크린샷 2025-10-06 오후 4 29 30" src="https://github.com/user-attachments/assets/b9d4765c-2eb3-4e78-b2ec-a3400a8a8df9" />
+
+## sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
