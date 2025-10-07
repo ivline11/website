@@ -1,5 +1,5 @@
 // @ts-ignore no-error
-const posts = import.meta.glob("/src/posts/*.md", { eager: true });
+const posts = import.meta.glob("/src/posts/*.md", { eager: true, query: "?raw", import: "default" });
 const directories = Object.keys(posts);
 const slugs = directories.map((post) =>
   post.split("/").at(-1)?.replace(".md", "")
