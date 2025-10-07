@@ -8,7 +8,18 @@
 </svelte:head>
 
 <section class="about">
-  <h1>About Me</h1>
+  <h1 class="page-title">About Me</h1>
+<style>
+  .page-title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    min-height: 3.5rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: -0.02em;
+  }
+</style>
 
   <div class="profile">
     <img src={profileImg} alt="Taejeong Kang" class="profile-img" />
@@ -43,7 +54,7 @@
         <li>🔹 <strong>Frontend Development: </strong> JavaScript, TypeScript, React, Next.js, Svelte</li>
         <li>🔹 <strong>System & Backend: </strong> C/C++, Python</li>
         <li>🔹 <strong>Blockchain: </strong> Solidity, Sui Move, Noir</li>
-        <li>🔹 <strong>Design Tools: Figma</strong></li>
+        <li>🔹 <strong>Design Tools: </strong> Figma</li>
         <li>🔹 <strong>Language: </strong> Korean, English</li>
       </ul>
     </div>

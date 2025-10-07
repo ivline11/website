@@ -7,4 +7,4 @@ categories:
 published: true
 ---
 
-강태정의 블로그
+강태정 아카이브

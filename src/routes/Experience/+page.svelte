@@ -8,7 +8,18 @@
 </svelte:head>
 
 <section class="experience">
-  <h1>Experience</h1>
+  <h1 class="page-title">Experience</h1>
+<style>
+  .page-title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    min-height: 3.5rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: -0.02em;
+  }
+</style>
 
   <!-- ===== Working Experience ===== -->
   <div class="exp-category">
@@ -186,11 +197,13 @@
 }
 
 h1 {
-  font-size: 3.5rem;
-  text-shadow: 0 0 20px rgba(200, 250, 255, 0.5);;
-  margin-bottom: 2rem;
-  animation: shimmer 6s infinite linear;
-}
+    font-size: 4rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(200, 250, 255, 0.5);
+    margin-bottom: 3rem;
+    animation: shimmer 6s infinite linear;
+  }
 
 @keyframes shimmer {
   0% { text-shadow: 0 0 10px rgba(180, 240, 255, 0.5); }

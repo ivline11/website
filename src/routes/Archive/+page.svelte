@@ -10,9 +10,21 @@
 </script>
 
 <section>
-    <h1>Archive</h1>
+    <h1 class="page-title">Archive</h1>
+<style>
+    .page-title {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        min-height: 3.5rem;
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: -0.02em;
+    }
+</style>
 	<ul class="column">
 		{#each data.posts as post}
+        <hr>
             <a href={'/Archive/'+ post.slug} class="title">
                 <li class="post">
                     <p class="date">{formatDate(post.date)}</p>
@@ -39,7 +51,7 @@
         hr {
             border: none;
             height: 1px;
-            background-color: var(--color-text-1);
+            background-color: #ffffff;
             margin: 0;
             width: 100%;
         }

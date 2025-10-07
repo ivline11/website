@@ -7,7 +7,18 @@
 </script>
 
 <div class="connect">
-    <h1>Connect</h1>
+    <h1 class="page-title">Connects</h1>
+<style>
+    .page-title {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        min-height: 3.5rem;
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: -0.02em;
+    }
+</style>
     <ul>
         <hr />
         <li>
@@ -80,12 +91,12 @@
     }
 
     hr {
-        border: none;
-        height: 2px;
-        background-color: var(--color-theme-dynamic);
-        margin: 2rem 0;
-        width: 100%;
-    }
+            border: none;
+            height: 1px;
+            background-color: #ffffff;
+            margin: 1.5rem 0;;
+            width: 120%;
+        }
 
     .link {
         position: relative;
@@ -142,10 +153,13 @@
     }
 
     h1 {
-        font-size: 3rem;
-        margin: 0rem;
-        color: var(--color-text-0);
-    }
+    font-size: 4rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(200, 250, 255, 0.5);
+    margin-bottom: 0rem;
+    animation: shimmer 6s infinite linear;
+  }
 
     @media (max-width: 768px) {
         .connect h1 {
