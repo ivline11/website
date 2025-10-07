@@ -31,27 +31,27 @@
 
 <style>
 	article {
-	max-width: 52rem;
-	margin: 2rem auto;
-	color: #eaf9ff;
-	padding: 2rem 2.5rem;
-		
-	/* ✅ glass + spacing */
-	background: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(12px);
-	border-radius: 18px;
-	box-shadow: 0 8px 25px rgba(0, 80, 180, 0.25);
-	transition: all 0.3s ease;
+		max-width: var(--column-width);
+		margin: 2rem auto;
+		color: #eaf9ff;
+		padding: 2rem 2.5rem;
 
-	/* ✅ 최소 높이 (빈 글일 때 박스 유지) */
-	min-height: 60vh;
-	min-width: 100vh;;
+		/* ✅ glass + spacing */
+		background: rgba(0, 0, 0, 0.2);
+		backdrop-filter: blur(12px);
+		border-radius: 18px;
+		box-shadow: 0 8px 25px rgba(0, 80, 180, 0.25);
+		transition: all 0.3s ease;
 
-	/* ✅ 콘텐츠가 적을 때도 세로 중앙 정렬 느낌 */
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}
+		/* ✅ 최소 높이 (빈 글일 때 박스 유지) */
+		min-height: 60vh;
+
+		/* ✅ 콘텐츠가 적을 때도 세로 중앙 정렬 느낌 */
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		box-sizing: border-box;
+	}
 
 article:has(iframe) {
 	/* ✅ iframe 있는 글일 때는 약간 더 여백 */
@@ -59,11 +59,18 @@ article:has(iframe) {
 }
 
 /* ✅ 작은 화면에서도 안정적인 레이아웃 유지 */
+
 @media (max-width: 768px) {
 	article {
 		margin: 2rem 1rem;
 		padding: 1.5rem 1.25rem;
 		min-height: 70vh;
+	}
+
+	.metadata {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
 	}
 }
 
@@ -137,6 +144,18 @@ article:hover {
 	overflow-x: auto;
 	color: #cdefff;
 	margin: 0;
+}
+
+.content :global(img) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.content :global(table) {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .comments {
