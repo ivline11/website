@@ -14,7 +14,8 @@
   --column-width: 42rem;
   --column-margin-top: 4rem;
   font-family: var(--font-text);
-  color: var(--color-text);
+  /* default text color: white for better contrast */
+  color: #ffffff;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, nav {
   font-family: var(--font-body);
-  color: var(--color-theme-dynamic);
+  color: #ffffff;
 }
 
 h1,
@@ -97,11 +98,11 @@ button:focus:not(:focus-visible) {
 
 .prose {
   line-height: 1.75;
-  color: var(--color-text-0);
+  color: #ffffff;
   font-size: 1rem;
 
   :is(h1, h2, h3, h4, h5, h6) {
-    color: var(--color-text-1);
+    color: #ffffff;
     font-family: var(--font-text);
     font-weight: 600;
   }
@@ -118,6 +119,12 @@ button:focus:not(:focus-visible) {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid #8b8b8b;
+  }
+
+  /* Ensure Experience page subheadings are white */
+  .experience h2,
+  .experience h3 {
+    color: #ffffff;
   }
 
   h3 {
