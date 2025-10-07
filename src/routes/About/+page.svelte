@@ -64,7 +64,7 @@
 <style>
   /* === Base Layout === */
   .about {
-    max-width: 1000px;
+    max-width: var(--column-width);
     margin: 0 auto;
     padding: 0 2rem 6rem;
     color: #eaf9ff;
@@ -138,7 +138,7 @@
     margin: 2.5rem 0;
   }
 
-  /* === Section List === */
+  /* === Section List: stacked cards === */
   .section-list {
     display: flex;
     flex-direction: column;
@@ -153,8 +153,10 @@
     border-radius: 16px;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    max-width: var(--column-width);
+    max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
   }
 
   .card:hover {
@@ -186,8 +188,8 @@
 
     .profile {
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start;
+      text-align: left;
     }
 
     .section-list {
@@ -205,10 +207,18 @@
 
     .profile ul {
       font-size: 1.1rem;
+      text-align: left;
+      padding-left: 0;
     }
 
     .card h2 {
       font-size: 2rem;
     }
+    /* ensure stacked layout on small screens (no grid columns) */
   }
+  @keyframes shimmer {
+  0% { text-shadow: 0 0 10px rgba(180, 240, 255, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); }
+  100% { text-shadow: 0 0 10px rgba(180, 240, 255, 0.5); }
+}
 </style>

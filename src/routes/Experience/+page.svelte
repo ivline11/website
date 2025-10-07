@@ -242,7 +242,7 @@ h1 {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  
+  text-align: left;
 }
 
 .exp-header h3 {
