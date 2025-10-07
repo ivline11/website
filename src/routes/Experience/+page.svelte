@@ -68,7 +68,7 @@
     </div>
   </div>
   <div class="exp-category">
-      <h2>Hackathons & Contests</h2>
+      <h2>Honors & Awards</h2>
         <div class="exp-item">
             <div class="exp-header">
                 <h3>KOBAC Hackathon</h3>
