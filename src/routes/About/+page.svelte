@@ -26,7 +26,7 @@
     <ul>
       <li>🔹 Taejeong Kang</li>
       <li>🔹 Undergraduate at <a href="https://cs.yonsei.ac.kr/" target="_blank" rel="noopener">Yonsei Univ, Computer Science</a></li>
-      <li>🔹 Graduate, President at <a href="https://x.com/BlockchainatYU/" target="_blank" rel="noopener">Blockchain at Yonsei</a></li>
+      <li>🔹 Graduate, Former President at <a href="https://x.com/BlockchainatYU/" target="_blank" rel="noopener">Blockchain at Yonsei</a></li>
       <li>🔹 Research Intern at <a href="https://www.blockmedia.co.kr/" target="_blank" rel="noopener">Blockmedia</a></li>
     </ul>
   </div>
@@ -53,7 +53,7 @@
       <ul>
         <li>🔹 <strong>Frontend Development: </strong> JavaScript, TypeScript, React, Next.js, Svelte</li>
         <li>🔹 <strong>System & Backend: </strong> C/C++, Python</li>
-        <li>🔹 <strong>Blockchain: </strong> Solidity, Sui Move, Noir</li>
+        <li>🔹 <strong>Blockchain: </strong> Solidity, Sui Move, Noir(zk)</li>
         <li>🔹 <strong>Design Tools: </strong> Figma</li>
         <li>🔹 <strong>Language: </strong> Korean, English</li>
       </ul>

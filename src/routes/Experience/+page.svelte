@@ -43,7 +43,7 @@
     <div class="exp-item">
       <div class="exp-header">
         <h3>Blockchain at Yonsei (BAY)</h3>
-        <span class="exp-meta">Seoul, Korea | Aug 2024 – Present</span>
+        <span class="exp-meta">Seoul, Korea | Aug 2024 – Dec 2025</span>
       </div>
       <ul>
         <li>Led a 40-member blockchain club at Yonsei University</li>
@@ -59,12 +59,6 @@
       <ul>
         <li>Completed a 6-week course on Zero-Knowledge Proofs</li>
       </ul>
-    </div>
-    <div class="exp-item">
-      <div class="exp-header">
-        <h3>Zetachain Korea Ambassader </h3>
-        <span class="exp-meta">Seoul, Korea | Sep 2024 – Present</span>
-      </div>
     </div>
   </div>
   <div class="exp-category">
@@ -118,18 +112,6 @@
                 <li>Developed Sui game Launchpad</li>
             </ul>
         </div>
-        <div class="exp-item">
-            <div class="exp-header">
-                <h3>Bithumb Stablecoin Contest</h3>
-                <span class="exp-meta">Online | Jul 2025 </span>
-            </div>
-        </div>
-        <div class="exp-item">
-            <div class="exp-header">
-                <h3>Kaia Stablecoin Ideathon</h3>
-                <span class="exp-meta">Online | Aug 2025 </span>
-            </div>
-        </div>
     </div>
  <div class="exp-category">
     <h2>Presentations</h2> 
@@ -151,6 +133,7 @@
         <li>Presented about Solana Core Architecture</li>
         <li>Presented about Oracle</li>
         <li>Presented 1-hour lecture about Blockchain Overview </li>
+        <li>Presented about "How to Identify Scam Projects" & Current blockchain trends</li>
       </ul>
     </div>
     <div class="exp-item">
@@ -160,6 +143,15 @@
       </div>
       <ul>
         <li>Introduced XRPFi, Hackathon winning project</li>
+      </ul>
+    </div>
+    <div class="exp-item">
+      <div class="exp-header">
+        <h3>On-Campus Blockchain Info Session 2025 </h3>
+        <span class="exp-meta">Seoul, Korea | Dec 2025</span>
+      </div>
+      <ul>
+        <li>Presented 40 minutes introduction about blockchain</li>
       </ul>
     </div>
   </div>

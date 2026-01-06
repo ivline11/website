@@ -31,7 +31,7 @@
         <li>
             <a href="mailto:ivline11@yonsei.ac.kr" target="_blank" rel="noopener" class="link">
                 Email
-                <span class="tooltip">ivline11@yonsei.ac.kr</span>
+                <span class="tooltip">rkdxowjd0215@gmail.com</span>
             </a>
         </li>
         <hr />
